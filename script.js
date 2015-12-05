@@ -7,7 +7,6 @@ $(document).ready(function(){
   $('#1').css('background-color', color);
   createTables();
   createColors();
-  rainbow();
 
 
   $("td").mousedown(function(){
@@ -35,8 +34,9 @@ $(document).ready(function(){
 });
 
 function rainbow(){
-
- if (rb === false)
+  if (rb === true)
+    rb = false;
+  else if (rb === false)
     rb = true;
 }
 
