@@ -34,12 +34,11 @@ $(document).ready(function(){
 });
 
 function rainbow(){
-  if (rb === true)
+  if (rb)
     rb = false;
-  else if (rb === false)
+  else
     rb = true;
 }
-
 
 function createTables(){
 
