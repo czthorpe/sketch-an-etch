@@ -1,12 +1,13 @@
 var draw = false;
 var color = 'black';
-var rainbow = false;
+var rb = false;
 
 $(document).ready(function(){
 
   $('#1').css('background-color', color);
   createTables();
   createColors();
+  rainbow();
 
 
   $("td").mousedown(function(){
@@ -19,7 +20,7 @@ $(document).ready(function(){
 
   $("td").mouseover(function(){
 
-    if (rainbow === true){
+    if (rb === true){
       color = randomColor();
     }
 
@@ -34,7 +35,9 @@ $(document).ready(function(){
 });
 
 function rainbow(){
-  rainbow = false;
+
+ if (rb === false)
+    rb = true;
 }
 
 
@@ -62,8 +65,6 @@ function resetTable(){
 function createColors(){
 for (var i = 2; i <= 16; i++)
   $('#'+i).css('background-color', randomColor());
-
-
 }
 
 function randomColor(){
