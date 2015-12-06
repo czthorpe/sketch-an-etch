@@ -23,12 +23,14 @@ $(document).ready(function(){
     }
 
       if (draw){$(this).css('background-color', color);}
+      $('.button').css('color', color);
 
   });
 
   $('.color').click(function() {
     color = $(this).css('backgroundColor');
     rb = false;
+    $('.button').css('color', color);
 })
 
 });

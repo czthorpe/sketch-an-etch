@@ -47,12 +47,12 @@ td {
   display: inline-block;
   height: 43px;
   width: 120px;
-  border: 2px solid #5C69FF;
+  border: 3px solid #5C69FF;
   cursor: pointer;
 }
 
 .color:hover {
-  border: 2px solid #303030;
+  border: 3px solid black;
 }
 
 .button {
@@ -62,17 +62,11 @@ td {
   width: 160px;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   background-color: #5C69FF;
-  color: #fff;
   font-size: 16px;
   cursor: pointer;
-  border: 2px solid #fff;
   font-weight: bold;
 }
 
-.button:hover {
-  border-color: black;
-  color: black;
-}
 
 .button:active {
 	padding-top: 10px;
@@ -80,10 +74,23 @@ td {
 
 #reset {
   float: right;
+  color: #17FFD8;
+  border: 3px solid #17FFD8;
+}
 
+#reset:hover {
+  border-color: black;
+  color: black;
 }
 #roonboon {
   float: right;
   clear: both;
   margin-top: 10px;
+  color: #E6EB49;
+  border: 3px solid #E6EB49;
+}
+
+#roonboon:hover {
+  border-color: black;
+  color: black;
 }
