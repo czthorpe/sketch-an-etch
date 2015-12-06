@@ -23,7 +23,6 @@ $(document).ready(function(){
     }
 
       if (draw){$(this).css('background-color', color);}
-      $('.button').css('color', color);
 
   });
 
