@@ -4,16 +4,15 @@ var rb = false;
 
 $(document).ready(function(){
 
-  $('#1').css('background-color', color);
   createTables();
   createColors();
 
 
-  $("td").mousedown(function(){
+  $(document).mousedown(function(){
     draw = true;
   });
 
-  $("td").mouseup(function(){
+  $(document).mouseup(function(){
     draw = false;
   });
 
@@ -29,6 +28,7 @@ $(document).ready(function(){
 
   $('.color').click(function() {
     color = $(this).css('backgroundColor');
+    rb = false;
 })
 
 });
@@ -62,7 +62,9 @@ function resetTable(){
 }
 
 function createColors(){
-for (var i = 2; i <= 16; i++)
+  $('#1').css('background-color', 'black');
+  $('#2').css('background-color', 'white');
+for (var i = 3; i <= 16; i++)
   $('#'+i).css('background-color', randomColor());
 }
 
